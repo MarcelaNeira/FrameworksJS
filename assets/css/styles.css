@@ -1,0 +1,294 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /*Fuentess*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+
+}
+
+#header{
+    height: 120px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #eee;
+    border-top: 3px solid #61dbfb;
+}
+#logo{
+    width:30%;
+    font-size:30px;
+    float: left;
+    margin-top:35px;
+}
+#logo img{
+    display:block;
+    float: left;
+    height: 60px;
+    margin-top:-10px;
+    animation: girar infinite 20s linear;
+}
+
+@keyframes girar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.center{
+    width: 75%;
+    margin: 0 auto;
+}
+#brand{
+    display:block;
+    margin: 0;
+    float: left;
+}
+#menu{
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+#menu ul{
+    line-height: 85px;
+    width: 70%;
+    float: right;
+}
+#menu ul li{
+    list-style: none;
+    height: 46px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#menu ul li a{
+    text-decoration:none;
+    color: #444;
+    transition: 300ms all;
+}
+#menu ul li a:hover{
+    color: #3cb2d3;
+}
+.clearfix{
+    clear: both;
+}
+
+#slider{
+    width: 100%;   
+    height: 350px;
+    color:white;
+    text-shadow: 0 0 10px #444;
+
+   /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(97,219,251,1) 37%);
+*/
+    background: rgba(184,236,245,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(184,236,245,1)), color-stop(30%, rgba(97,219,251,1)), color-stop(32%, rgba(97,219,251,1)), color-stop(100%, rgba(97,219,251,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ecf5', endColorstr='#61dbfb', GradientType=1 );}
+
+#slider h1{
+
+    margin-top: 10px;
+    padding: 0;
+    padding-top: 130px;
+    text-align: center;
+
+}
+.btn-white{
+    color:black;
+    display:block;
+    background:white;
+    padding:10px;
+    width: 90px;
+    height: 25px;
+    margin: 0 auto;
+    font-size:15px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #444;
+    line-height: 25px;
+    transition: 340ms all;
+}
+.btn-white:hover{
+    color:white;
+    background: rgb(126, 124, 124);
+}
+
+#slider.slider-small{
+    height: 150px;
+}
+#slider.slider-small h1{
+    margin-top: 0.2px;
+    padding-top:53px;
+}
+#content{
+    width: 70%;
+    float: left;
+   
+    min-height: 650px;
+    margin-right: 20px;
+}
+#sidebar{
+    width: 25%;
+    float: left;
+    
+}
+.sidebar-item{
+    background:#f7f7f7;
+    padding:20px;
+    margin-top:30px;
+}
+.sidebar-item h3{
+    text-transform: uppercase;
+    font-size: 17px;
+    margin:0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #eee;
+    margin-bottom: 10px;
+}
+.sidebar-item .btn{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.btn{
+    display: block;
+    background: black;
+    color:white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 400ms all;
+    border:none;
+    border-radius: 50px;
+    
+}
+.btn-sucess{
+    background: rgb(98, 182, 42);
+}
+.btn-sucess:hover{
+    background: black;
+}
+input[type="text"],
+textarea{
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding:3px;
+    transition: 300ms all;
+}
+input[type="text"]:focus{
+    box-shadow: 0 0 5px #eee inset;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+}
+.radiobuttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.mid-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.mid-form label{
+    display: block;
+    float: left;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-top: 
+}
+#footer{
+    background: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    line-height: 72px;
+    color:#444;
+}
+#footer p{
+    margin:0;
+    padding:0px;
+}
+
+.article-item{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top:10px;
+    text-align: left;
+}
+.article-item .image-wrap{
+    display: block;
+    width:130px;
+    height: 130px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.article-item h2{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+}
+.article-item .date{
+    display: block;
+    width: 100%;
+    color: #444;
+}
+.article-item a{
+    display: block;
+    color: #444444;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+.article-item a:hover{
+  text-decoration-line: underline;
+}
+.subheader{
+    font-size: 38px;
+    border-bottom: 1px solid #eee;
+
+}
+.article-detail .image-wrap{
+    float: none;
+    width: 100%;
+    height: 300px;
+}
+.article-detail .image-wrap img{
+    
+    width: 100%;
+    height: 300px;
+}
+
+.article-detail .subheader{
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: none;
+}
