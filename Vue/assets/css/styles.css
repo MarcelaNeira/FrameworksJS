@@ -15,7 +15,7 @@ body{
     width: 100%;
     background: white;
     border-bottom: 1px solid #eee;
-    border-top: 3px solid #61dbfb;
+    border-top: 3px solid #41b883;
 }
 #logo{
     width:30%;
@@ -28,15 +28,21 @@ body{
     float: left;
     height: 60px;
     margin-top:-10px;
-    animation: girar infinite 20s linear;
+    animation: latir infinite 5s linear;
 }
 
-@keyframes girar{
-    from{
-        transform:rotate(0deg);
+@keyframes latir{
+    0%{
+        transform:scale(0.8, 0.8);
     }
-    to{
-        transform:rotate(360deg);
+    50%{
+        transform:scale(1,1);
+    }
+    60%{
+        transform:scale(0.9,0.9);
+    }
+    100%{
+        transform:scale(1, 1);
     }
 }
 .center{
@@ -71,7 +77,7 @@ body{
     transition: 300ms all;
 }
 #menu ul li a:hover{
-    color: #3cb2d3;
+    color: #41b883;
 }
 .clearfix{
     clear: both;
@@ -83,17 +89,15 @@ body{
     color:white;
     text-shadow: 0 0 10px #444;
 
-   /* background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(97,219,251,1) 37%);
-*/
-    background: rgba(184,236,245,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(184,236,245,1)), color-stop(30%, rgba(97,219,251,1)), color-stop(32%, rgba(97,219,251,1)), color-stop(100%, rgba(97,219,251,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(184,236,245,1) 0%, rgba(97,219,251,1) 30%, rgba(97,219,251,1) 32%, rgba(97,219,251,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ecf5', endColorstr='#61dbfb', GradientType=1 );}
+    background: rgba(152,230,192,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(152,230,192,1) 0%, rgba(65,184,131,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(152,230,192,1)), color-stop(100%, rgba(65,184,131,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(152,230,192,1) 0%, rgba(65,184,131,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(152,230,192,1) 0%, rgba(65,184,131,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(152,230,192,1) 0%, rgba(65,184,131,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(152,230,192,1) 0%, rgba(65,184,131,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98e6c0', endColorstr='#41b883', GradientType=1 );
+}
 
 #slider h1{
 
@@ -314,12 +318,22 @@ textarea{
         width: auto;
     }
 }
+@media(max-width:910px){
 
-@media(max-width:797px){
+    #logo{
+        width: 265px;
+    }
+    #menu{
+        width: auto;
+    }
+
+}
+
+@media(max-width:815px){
 
     #logo{
         float: none;
-        width: 240px;
+        /*width: 240px; lo quito porque hereda de el de arriba*/
         margin: 0 auto;
         margin-top: 20px;
 
